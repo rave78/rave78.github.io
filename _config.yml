@@ -12,4 +12,4 @@ github_username:  rave78
 markdown: kramdown
 
 # python code
-pygments: true
+highlighter: pygments
