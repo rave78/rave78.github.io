@@ -14,7 +14,7 @@ All great blogs started with some quotes and this blog will follow the same path
 In addition, I want to include other quotes, that are not so famous but still interesting.
 
 * Practice until your fingers bleed, then put on bandages and practice until they fall off. . . . . Then practice some more (Paul Harris)
-* Don`t make unimportant things important (Dai Vernon)
+* Do not make unimportant things important (Dai Vernon)
 * Practicing is a lot like the bank. If you don't put anything in, you won't get anything out (Dai Vernon)   
 
 [zenpencils]:	http://www.zenpencils.com
