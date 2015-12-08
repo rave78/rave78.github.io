@@ -4,7 +4,7 @@ title: rave78
 description: > # this means to ignore newlines until "baseurl:"
   Technical blog about artificial intelligence, pattern recognition, neural networks and more
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://rave78.github.io" # the base hostname & protocol for your site
+url: "http://rave78.com" # the base hostname & protocol for your site
 twitter_username: rave78
 github_username:  rave78
 
@@ -13,3 +13,25 @@ markdown: kramdown
 
 # python code
 highlighter: pygments
+
+# scholar
+scholar:
+  style: apa-tr 
+  locale: en
+
+  sort_by: none
+  order: ascending
+
+  source: ./_bibliography
+  bibliography: conferences.bib
+  bibliography: talks.bib
+  bibliography_template: "{{reference}}"
+
+  replace_strings: true
+  join_strings:    true
+
+  details_dir:    bibliography
+  details_layout: bibtex.html
+  details_link:   Details
+
+  query: "@*"
