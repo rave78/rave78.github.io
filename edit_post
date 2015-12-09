@@ -1,6 +1,0 @@
-#!/bin/zsh 
-tmux new-session -s jekyll_post -n edit_post -d 
-tmux send-keys -t jekyll_post 'jekyll serve -w' C-m 
-tmux split-window -h -t jekyll_post
-tmux send-keys -t jekyll_post:1.2 'cd _posts' C-m
-tmux attach -t jekyll_post 

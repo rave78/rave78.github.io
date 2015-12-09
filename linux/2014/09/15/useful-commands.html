@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>rave78</title>
+    <title>Tips for new Ph.D. students</title>
     <meta name="description" content="Technical blog about artificial intelligence, pattern recognition, neural networks and more
 ">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://www.rave78.com/">
+    <link rel="canonical" href="http://www.rave78.com/linux/2014/09/15/useful-commands.html">
 </head>
 
 
@@ -58,31 +58,60 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
+        <div class="post">
 
-  <h1 class="page-heading">Posts</h1>
+  <header class="post-header">
+    <h1 class="post-title">Tips for new Ph.D. students</h1>
+    <p class="post-meta">Sep 15, 2014</p>
+  </header>
 
-  <ul class="post-list">
-    
-      <li>
-        <span class="post-meta">Sep 15, 2014</span>
+  <article class="post-content">
+    <p>As a fomer lecturer of CS department at <a href="http://www.fiec.espol.edu.ec">ESPOL</a>, I am really happy that the first <a href="http://dcca.espol.edu.ec/">Ph.D. program</a> was launched.  With this in mind, I want to share with the new students some tips that I found quite useful during my research. </p>
 
-        <h2>
-          <a class="post-link" href="/linux/2014/09/15/useful-commands.html">Tips for new Ph.D. students</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Sep 14, 2014</span>
+<p>a) <strong>Remote copy</strong>: There are cases that a file (or directory) needs to be transfer from
+one computer to another computer via network</p>
 
-        <h2>
-          <a class="post-link" href="/2014/09/14/first-post.html">First Post</a>
-        </h2>
-      </li>
-    
-  </ul>
+<pre><code>scp file.h5 *#username*@*#computer*:*#location*
 
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+scp -r *#source\_directory* *#username*@*#computer*:*#location*
+</code></pre>
+
+<p>b) <strong>Screen command</strong>:  Launch any script and keep it running in the background.  Useful if you need to review the status of your script in a different locations</p>
+
+<pre><code>screen  --&gt; new screen-terminal
+
+\&lt;Ctrl-A\&gt; + d --&gt; detach current screen-terminal
+
+screen -r *#name\_screen* --&gt; reattach to name\_screen
+
+screen -ls --&gt; list all screen-terminals
+</code></pre>
+
+<p>c) <strong>Subsitute information in text files</strong></p>
+
+<pre><code>sed -i 's/*#search\_pattern*/*#substitution*' *#input\_file*
+</code></pre>
+
+<p>d) <strong>Remote mounting</strong> </p>
+
+<pre><code>sshfs *#username*@*#computer*:*#remote\_folder*
+</code></pre>
+
+<p>e) <strong>Join several pdf files</strong></p>
+
+<pre><code>pdfunity *filename1* *filename2* ... *filenameN*
+</code></pre>
+
+<p>f)  <strong>ffmpeg</strong>: create a video from a set of images (given a pattern)</p>
+
+<pre><code>ffmpeg -r 1/2 -i *pattern\_image* -r 30 output.mp4
+</code></pre>
+
+<p>g)  <strong>Academic writing</strong>: It sounds obvious but it is a complex task to put
+in words.  I recommend two books: <em>Science Research Writing For Non-Native Speakers Of English: A Guide for Non-Native Speakers of English (Glasman-Deal)</em> and <em>How to Write and Publish a Scientific Paper (Day and Gastel)</em></p>
+
+
+  </article>
 
 </div>
 

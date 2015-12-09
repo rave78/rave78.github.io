@@ -1,30 +1,98 @@
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml" />
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:10 %}
+    <title>rave78</title>
+    <description>Technical blog about artificial intelligence, pattern recognition, neural networks and more
+</description>
+    <link>http://www.rave78.com/</link>
+    <atom:link href="http://www.rave78.com/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Wed, 09 Dec 2015 00:57:09 +0100</pubDate>
+    <lastBuildDate>Wed, 09 Dec 2015 00:57:09 +0100</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-        {% for tag in post.tags %}
-        <category>{{ tag | xml_escape }}</category>
-        {% endfor %}
-        {% for cat in post.categories %}
-        <category>{{ cat | xml_escape }}</category>
-        {% endfor %}
+        <title>Tips for new Ph.D. students</title>
+        <description>&lt;p&gt;As a fomer lecturer of CS department at &lt;a href=&quot;http://www.fiec.espol.edu.ec&quot;&gt;ESPOL&lt;/a&gt;, I am really happy that the first &lt;a href=&quot;http://dcca.espol.edu.ec/&quot;&gt;Ph.D. program&lt;/a&gt; was launched.  With this in mind, I want to share with the new students some tips that I found quite useful during my research. &lt;/p&gt;
+
+&lt;p&gt;a) &lt;strong&gt;Remote copy&lt;/strong&gt;: There are cases that a file (or directory) needs to be transfer from
+one computer to another computer via network&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;scp file.h5 *#username*@*#computer*:*#location*
+
+scp -r *#source\_directory* *#username*@*#computer*:*#location*
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;b) &lt;strong&gt;Screen command&lt;/strong&gt;:  Launch any script and keep it running in the background.  Useful if you need to review the status of your script in a different locations&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;screen  --&amp;gt; new screen-terminal
+
+\&amp;lt;Ctrl-A\&amp;gt; + d --&amp;gt; detach current screen-terminal
+
+screen -r *#name\_screen* --&amp;gt; reattach to name\_screen
+
+screen -ls --&amp;gt; list all screen-terminals
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;c) &lt;strong&gt;Subsitute information in text files&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sed -i &#39;s/*#search\_pattern*/*#substitution*&#39; *#input\_file*
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;d) &lt;strong&gt;Remote mounting&lt;/strong&gt; &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sshfs *#username*@*#computer*:*#remote\_folder*
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;e) &lt;strong&gt;Join several pdf files&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pdfunity *filename1* *filename2* ... *filenameN*
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;f)  &lt;strong&gt;ffmpeg&lt;/strong&gt;: create a video from a set of images (given a pattern)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ffmpeg -r 1/2 -i *pattern\_image* -r 30 output.mp4
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;g)  &lt;strong&gt;Academic writing&lt;/strong&gt;: It sounds obvious but it is a complex task to put
+in words.  I recommend two books: &lt;em&gt;Science Research Writing For Non-Native Speakers Of English: A Guide for Non-Native Speakers of English (Glasman-Deal)&lt;/em&gt; and &lt;em&gt;How to Write and Publish a Scientific Paper (Day and Gastel)&lt;/em&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 15 Sep 2014 16:00:00 +0200</pubDate>
+        <link>http://www.rave78.com/linux/2014/09/15/useful-commands.html</link>
+        <guid isPermaLink="true">http://www.rave78.com/linux/2014/09/15/useful-commands.html</guid>
+        
+        <category>noteToMyself</category>
+        
+        
+        <category>linux</category>
+        
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>First Post</title>
+        <description>&lt;p&gt;All great blogs started with some quotes and this blog will follow the same path.  I found a few great quotes thanks to &lt;a href=&quot;http://www.zenpencils.com&quot;&gt;zenpencils&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Do not go where the path may lead, go instead where there is no path and leave a trail (Ralph Waldo Emerson)&lt;/li&gt;
+  &lt;li&gt;Always do what you are afraid to do (Ralph Waldo Emerson)&lt;/li&gt;
+  &lt;li&gt;Unless you try to do something beyond what you have already mastered you will never grow up (Ralph Waldo Emerson)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In addition, I want to include other quotes, that are not so famous but still interesting.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Practice until your fingers bleed, then put on bandages and practice until they fall off. . . . . Then practice some more (Paul Harris)&lt;/li&gt;
+  &lt;li&gt;Do not make unimportant things important (Dai Vernon)&lt;/li&gt;
+  &lt;li&gt;Practicing is a lot like the bank. If you don’t put anything in, you won’t get anything out (Dai Vernon)   &lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Sun, 14 Sep 2014 16:00:00 +0200</pubDate>
+        <link>http://www.rave78.com/2014/09/14/first-post.html</link>
+        <guid isPermaLink="true">http://www.rave78.com/2014/09/14/first-post.html</guid>
+        
+        
+      </item>
+    
   </channel>
 </rss>
