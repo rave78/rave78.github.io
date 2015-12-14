@@ -82,7 +82,7 @@
 <p>a) <strong>Remote copy</strong>: There are cases that a file (or directory) needs to be transfer from
 one computer to another computer via network</p>
 
-<pre><code>scp file.h5 username@computer:location
+<pre><code>scp filename username@computer:location
 
 scp -r source_directory username@computer:location
 </code></pre>
@@ -105,12 +105,12 @@ screen -ls --&gt; list all screen-terminals
 
 <p>d) <strong>Remote mounting</strong> </p>
 
-<pre><code>sshfs username@computer:remote_folder
+<pre><code>sshfs username@computer:remote_folder mounting_point
 </code></pre>
 
 <p>e) <strong>Join several pdf files</strong></p>
 
-<pre><code>pdfunity filename1 filename2 ... filenameN
+<pre><code>pdfunity filename1 filename2 ... filenameN  output_filename
 </code></pre>
 
 <p>f)  <strong>ffmpeg</strong>: create a video from a set of images (given a pattern)</p>
