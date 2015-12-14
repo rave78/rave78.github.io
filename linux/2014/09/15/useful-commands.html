@@ -82,40 +82,40 @@
 <p>a) <strong>Remote copy</strong>: There are cases that a file (or directory) needs to be transfer from
 one computer to another computer via network</p>
 
-<pre><code>scp file.h5 *#username*@*#computer*:*#location*
+<pre><code>scp file.h5 username@computer:location
 
-scp -r *#source\_directory* *#username*@*#computer*:*#location*
+scp -r source_directory username@computer:location
 </code></pre>
 
 <p>b) <strong>Screen command</strong>:  Launch any script and keep it running in the background.  Useful if you need to review the status of your script in a different locations</p>
 
 <pre><code>screen  --&gt; new screen-terminal
 
-\&lt;Ctrl-A\&gt; + d --&gt; detach current screen-terminal
+&lt;Ctrl-A&gt; + d --&gt; detach current screen-terminal
 
-screen -r *#name\_screen* --&gt; reattach to name\_screen
+screen -r name_screen --&gt; reattach to name_screen
 
 screen -ls --&gt; list all screen-terminals
 </code></pre>
 
 <p>c) <strong>Subsitute information in text files</strong></p>
 
-<pre><code>sed -i 's/*#search\_pattern*/*#substitution*' *#input\_file*
+<pre><code>sed -i 's/search_pattern/substitution' input_file
 </code></pre>
 
 <p>d) <strong>Remote mounting</strong> </p>
 
-<pre><code>sshfs *#username*@*#computer*:*#remote\_folder*
+<pre><code>sshfs username@computer:remote_folder
 </code></pre>
 
 <p>e) <strong>Join several pdf files</strong></p>
 
-<pre><code>pdfunity *filename1* *filename2* ... *filenameN*
+<pre><code>pdfunity filename1 filename2 ... filenameN
 </code></pre>
 
 <p>f)  <strong>ffmpeg</strong>: create a video from a set of images (given a pattern)</p>
 
-<pre><code>ffmpeg -r 1/2 -i *pattern\_image* -r 30 output.mp4
+<pre><code>ffmpeg -r 1/2 -i pattern_image -r 30 output.mp4
 </code></pre>
 
 <p>g)  <strong>Academic writing</strong>: This was the first advice that I received (thanks
