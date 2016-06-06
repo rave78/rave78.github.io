@@ -103,7 +103,10 @@ code {
 
 pre {
   padding: 8px 12px;
-  overflow-x: scroll; }
+  overflow-x: hidden;
+  /** previous method
+   * overflow-x: scroll;
+   */ }
   pre > code {
     border: 0;
     padding-right: 0;
