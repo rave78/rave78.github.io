@@ -6,9 +6,9 @@
 </description>
     <link>http://www.rave78.com/</link>
     <atom:link href="http://www.rave78.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 02 Oct 2016 20:29:26 +0200</pubDate>
-    <lastBuildDate>Sun, 02 Oct 2016 20:29:26 +0200</lastBuildDate>
-    <generator>Jekyll v3.0.1</generator>
+    <pubDate>Tue, 13 Jun 2017 17:03:45 +0200</pubDate>
+    <lastBuildDate>Tue, 13 Jun 2017 17:03:45 +0200</lastBuildDate>
+    <generator>Jekyll v3.4.3</generator>
     
       <item>
         <title>My year in books 2015</title>
@@ -25,7 +25,7 @@
     
       <item>
         <title>Advices for new Ph.D. students from an old one</title>
-        <description>&lt;p&gt;As a fomer lecturer of CS department at &lt;a href=&quot;http://www.fiec.espol.edu.ec&quot;&gt;ESPOL&lt;/a&gt;, I am really happy that the first &lt;a href=&quot;http://dcca.espol.edu.ec/&quot;&gt;Ph.D. program&lt;/a&gt; was launched.  With this in mind, I want to share with the new students some tips that I found quite useful during my research. &lt;/p&gt;
+        <description>&lt;p&gt;As a fomer lecturer of CS department at &lt;a href=&quot;http://www.fiec.espol.edu.ec&quot;&gt;ESPOL&lt;/a&gt;, I am really happy that the first &lt;a href=&quot;http://dcca.espol.edu.ec/&quot;&gt;Ph.D. program&lt;/a&gt; was launched.  With this in mind, I want to share with the new students some tips that I found quite useful during my research.&lt;/p&gt;
 
 &lt;p&gt;a) &lt;strong&gt;Remote copy&lt;/strong&gt;: There are cases that a file (or directory) needs to be transfer from
 one computer to another computer via network&lt;/p&gt;
@@ -48,10 +48,10 @@ screen -ls --&amp;gt; list all screen-terminals
 
 &lt;p&gt;c) &lt;strong&gt;Subsitute information in text files&lt;/strong&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;sed -i &#39;s/search_pattern/substitution/&#39; input_file
+&lt;pre&gt;&lt;code&gt;sed -i 's/search_pattern/substitution/' input_file
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;d) &lt;strong&gt;Remote mounting&lt;/strong&gt; &lt;/p&gt;
+&lt;p&gt;d) &lt;strong&gt;Remote mounting&lt;/strong&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;sshfs username@computer:remote_folder mounting_point
 &lt;/code&gt;&lt;/pre&gt;
@@ -98,7 +98,7 @@ in words.  I can recommend two books: &lt;em&gt;Science Research Writing For Non
 &lt;ul&gt;
   &lt;li&gt;Practice until your fingers bleed, then put on bandages and practice until they fall off. . . . . Then practice some more (Paul Harris)&lt;/li&gt;
   &lt;li&gt;Do not make unimportant things important (Dai Vernon)&lt;/li&gt;
-  &lt;li&gt;Practicing is a lot like the bank. If you don’t put anything in, you won’t get anything out (Dai Vernon)   &lt;/li&gt;
+  &lt;li&gt;Practicing is a lot like the bank. If you don’t put anything in, you won’t get anything out (Dai Vernon)&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
